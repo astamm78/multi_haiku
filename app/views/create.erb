@@ -1,0 +1,15 @@
+<div class="container">
+
+  <% if @errors %>
+    <p class="errors"><%= @errors %>
+  <% end %>
+
+  <form id ="sign_in" action="/sign_in" method="post">
+
+    <input class="textbox" type="text" name="email" placeholder="Enter your email here!">
+    <input class="textbox" type="password" name="password" placeholder="Enter password here!"><br>
+    <input type="submit" value="login"><br><br>
+
+  </form>
+
+</div>
