@@ -1,10 +1,19 @@
 html {
   background: url('../images/wavegrid.png');
   font-family: sans-serif;
+  position: relative;
 }
 
 body {
   padding: 0 0 90px;
+}
+
+.smallify {
+  font-size: .6em;
+}
+
+.smallify a {
+  text-decoration: underline;
 }
 
 header {
@@ -19,6 +28,7 @@ header h1 a {
   color: white;
   text-decoration: none;
   font-size: 42px;
+  font-weight: normal;
 }
 
 header nav ul {
@@ -38,11 +48,23 @@ header nav ul li {
 header nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: normal;
 }
 
 header nav ul li a:hover {
   color: gray;
 }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: gray;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .container {
   clear: both;
   width: 720px;
@@ -55,6 +77,30 @@ header nav ul li a:hover {
   font-size: 32px;
   color: gray;
   line-height: 1.6em;
+}
+
+.login h2 {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-size: 32px;
+  color: gray;
+  margin: 0 0 30px;
+}
+
+.haiku h2 {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  color: gray;
+  font-size: 32px;
+  margin: 0 0 30px;
+}
+
+.login h3, .create h3 {
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  font-size: 28px;
+  color: red;
+  margin: 0 0 20px;
 }
 
 .haiku ul {
@@ -70,6 +116,7 @@ header nav ul li a:hover {
 .haiku a {
   text-decoration: none;
   color: gray;
+  font-weight: normal;
 }
 
 .haiku a:hover {
@@ -104,19 +151,29 @@ input {
   padding: 15px;
   background: rgba(255,255,255,0.5);
   margin: 0 0 10px 0;
-  width: 200px;
+  width: 680px;
 }
 
-input.textbox {
-  width: 720px;
+button {
+  background: gray;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 1.2em;
 }
 
+button:hover {
+  background: black;
+  cursor: pointer;
+  box-shadow: -2px 2px 5px gray;
+}
 
-
-
-
-
-
+p#session_user {
+  text-align: center;
+  color: gray;
+  font-size: .9em;
+  margin: 40px;
+}
 
 
 

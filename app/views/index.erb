@@ -1,12 +1,18 @@
-<div class="container haiku">
+<div class="container login">
 
-  <p class="date"><%= @haiku.created_at.strftime('%b %e, %Y') %></p>
-  <p><%= @haiku.line_1 %></p>
-  <p><%= @haiku.line_2 %></p>
-  <p><%= @haiku.line_3 %></p>
-  <ul>
-    <li><a href="/haiku/<%= @haiku.id %>">permalink</a></li>
-    <li><a href ="/vote/<%= @haiku.id %>">vote</a></li>
-  </ul>
+  <h2>
+    Please Sign In<br>
+    <span class="smallify">or <a href="/signup">create</a> an account</span>
+  </h2>
+
+  <% if @errors %>
+    <h3><%= @errors %></h3>
+  <% end %>
+
+  <form name="sign_in" action="/verify" method="post">
+    <input class="textbox" type="text" name="email" placeholder="Email">
+    <input class="textbox" type="password" name="password" placeholder="Password">
+    <button type="submit" value="login">Submit</button>
+  </form>
 
 </div>
